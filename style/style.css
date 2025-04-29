@@ -1,0 +1,45 @@
+body {
+    background-color: Silver;
+}
+
+.answers {
+    margin-top: 10px;
+}
+.answer-btn {
+    margin: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.block {
+    display: flex;
+    align-items: flex-end;
+    margin: 2px;
+    background-color: SlateGrey;
+    border: 2px outset SlateGrey;
+    border-radius: 20px;
+    justify-content: center;
+    max-width: 500px;
+    margin-left: 500px;
+     
+}
+
+.but {
+    width: 50px;
+    height: 25px;
+    padding: 2px;
+    font-size: 12px;
+        transition: width 2s, height 4s;
+            transition: color 0.8s ease-in-out;
+                transition: border-color 0.8s ease-in-out;
+                   transition: font-size 0.5s ease; 
+}
+
+.but:hover {
+    font-size: 15px;
+    width: 52px;
+    height: 27px;
+    padding: 2px;
+    border-color: slateblue;
+    color: black;
+}

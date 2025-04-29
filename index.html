@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Опрос</title>
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+<body>
+ <!-- <div class="block"> -->
+    <p> Любовь моя, нажми на  
+    <button id="showQuestionBtn" class="but"> кнопку </button>
+      <p> пожалуйста 
+  </div>
+
+    <div id="questionContainer" style="display: none;">
+        <p>Ты выйдешь за меня?</p>
+      <div class="answers">
+            <button class="answer-btn" onclick="answerQuestion('yes')">Да</button>
+            <button class="answer-btn" onclick="answerQuestion('no')">Нет</button>
+        </div>
+      </div>
+  
+  
+    <script>
+        document.getElementById('showQuestionBtn').addEventListener('click', function() {
+            document.getElementById('questionContainer').style.display = 'block'; 
+            this.style.display = 'none';
+        });
+            function answerQuestion(answer) {
+                if (answer === 'yes') {
+                  alert('Люблю тебя,Шунечка');   
+                } else {
+                    alert('тогда я буду морить себя голодом и отсутствием сна пока не умру');
+                
+                }
+            
+            
+            document.getElementById('questionContainer').style.display = 'none';
+            document.getElementById('showQuestionBtn').style.display = 'inline-block';
+        }
+    </script>
+</body>
+</html>
